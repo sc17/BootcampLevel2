@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="canvas" style='background-color:#EEE;' width='500px' height='200px'/>
+<script type='text/javascript'>
+   var canvas = document.getElementById("canvas");
+   var context = canvas.getContext("2d");
+   <!--from   w w w .j av  a2s . c  o  m-->
+    var w = 500;
+    var h = 200;
+    setInterval(animate, 50);
+    var r = 0;
+    var ctx = canvas.getContext("2d");
+    function animate() {
+        ctx.clearRect(0, 0, w, h);
+        ctx.save();
+        ctx.translate(200, 200);
+        ctx.rotate(r);
+        ctx.fillRect(0, 0, 100, 100);
+        ctx.restore();
+        r += 0.1;
+    }
+
+</script>
+</body>
+</html>

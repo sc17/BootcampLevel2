@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <nav>
+      <div class="nav-wrapper color-blue">
+          <a href="#!" class="brand-logo center">LocalStorage</a>
+      </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+       <form class="col s8">
+         <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text"  class="validate" >
+             <label for="name">Nombre</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="lastname" type="text"  class="validate"  required="" aria-required="true">
+              <label for="lastname" data-error="Apellido" >Apellido</label>
+            </div>
+    <div class="col s12 m4 l4"><p>  <a id="save"  class="modal-trigger waves-effect color-blue btn" >Guardar</a></p></div>
+    <div class="col s12 m4 l4"><p>  <a id="clear" class="modal-trigger waves-effect color-blue btn" >Borrar Todo</a></p></div>
+    <div class="col s12 m4 l4"><p>  <a id="list-data" class="modal-trigger waves-effect color-blue btn" href="#modal1">Ver</a></p></div>
+
+</div>
+
+</div>
+</form>
+  </div>
+
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <ul id="persons" class="collection">
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
